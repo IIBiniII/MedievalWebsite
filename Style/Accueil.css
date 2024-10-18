@@ -1,0 +1,152 @@
+@font-face {
+    font-family: Abhaya;
+    src: url('/Font/Abhaya_Libre/AbhayaLibre-Regular.ttf');
+}
+@font-face {
+    font-family: Abhaya-bold;
+    src: url('/Font/Abhaya_Libre/AbhayaLibre-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Graduate;
+    src: url('/Font/Graduate/Graduate-Regular.ttf');
+    font-weight: bold;
+}
+
+
+*{
+    --var-main-color: #A68261;
+    --var-secondary-color: #391607;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+body{
+    margin:0;
+}
+.page{
+    margin:25px 25px 0 25px;
+}
+
+
+.title{
+    font-family: 'Graduate';
+    text-align: center;
+}
+
+hr.big-trait{
+    border: black 1.4px solid;
+}
+nav,footer{
+    display: flex;
+}
+nav>*, footer>*{
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    background-color: var(--var-secondary-color);
+    padding: 25px;
+
+    
+}
+footer>a{
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+
+section{
+    background-color: var(--var-main-color);
+    width: min-content;
+    color: #FFFFFF;
+    padding: 20px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+section>p{
+    text-align: center;
+}
+
+.text{
+    font-family: 'Abhaya';
+}
+
+section>.center-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 0px;
+}
+
+
+#subjectInfo{
+    display: flex;
+}
+#subjectInfo>span{
+    font-family: 'Abhaya-bold';
+}
+#subjectInfo>span:last-child{
+    margin-left: auto;
+}
+
+.img{
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0,.4);
+}
+.img,.img>a>img{
+    display: block;
+    width:350px;
+    height:230px;
+}
+
+
+.img-text{
+    background-color: var(--var-secondary-color);
+    font-family: 'Graduate';
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.img-text>p{
+    text-align: center;
+}
+
+.img.left{
+    position: relative;
+    left: -75px;
+}
+.img.right{
+    position: relative;
+    left: 50px;
+}
+
+.colored-link{
+    color:var(--var-main-color);
+}
+
+
+@media screen and (max-width: 880px) {
+    .img.left{
+        position: initial;
+    }
+    .img.right{
+        position: initial;
+    }
+    section>.center-part{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px 0px;
+    }
+    .img,.img>a>img{
+        display: block;
+        /* max-width:350px; */
+        height:230px;
+        width: auto;
+    }
+    
+
+}
