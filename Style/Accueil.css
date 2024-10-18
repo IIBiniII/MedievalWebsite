@@ -1,16 +1,16 @@
 @font-face {
     font-family: Abhaya;
-    src: url('/Font/Abhaya_Libre/AbhayaLibre-Regular.ttf');
+    src: url('../Font/Abhaya_Libre/AbhayaLibre-Regular.ttf');
 }
 @font-face {
     font-family: Abhaya-bold;
-    src: url('/Font/Abhaya_Libre/AbhayaLibre-Bold.ttf');
+    src: url('../Font/Abhaya_Libre/AbhayaLibre-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: Graduate;
-    src: url('/Font/Graduate/Graduate-Regular.ttf');
+    src: url('../Font/Graduate/Graduate-Regular.ttf');
     font-weight: bold;
 }
 
